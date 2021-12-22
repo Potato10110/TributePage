@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+	scroll-behavior: smooth;
+}
+header{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 0px 20%;
+    margin-top: 20px;
+	opacity: 0;
+	transform: translateY(.2rem);
+	animation: animate 2s ease forwards;
+}
+
+header h1{
+	color: #000000;
+	font-family: 'Dancing Script', cursive;
+	font-size: 2.6em;
+	font-weight: 400;
+	margin-right: auto;
+}
+
+li,a{
+	color: #000000;
+	font-family: 'poppins', 'Times New Roman', Times, serif;
+	text-decoration: none;
+}
+
+.navmenu ul{
+	list-style: none;
+}
+
+.navmenu li{
+	display: inline-block;
+	padding: 0 15px;
+}
+
+.navmenu li a:hover{
+	border-bottom: 2px solid #000000;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}  
+.content img{
+    border-radius: 50%;
+    width: 40%;
+    height: 40%;
+    margin-top: 55px;
+	margin-bottom: 30px;
+	opacity: 0;
+	transform: translateY(3rem);
+	animation: animate 2s ease forwards;
+}
+
+.title h1{
+	text-align: center;
+	font-family: 'Dancing Script', cursive;
+	padding-bottom: 25px;
+	border-bottom: #000000 solid 1px;
+	margin-bottom: 40px;
+	opacity: 0;
+	transform: translateY(3rem);
+	animation: animate 2s ease forwards;
+}
+
+.container{
+	width: 70%;
+	margin: auto;
+}
+
+@keyframes animate {
+	to{
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.earlyLife{
+	background-color: #000000;
+	padding: 50px;
+	margin-top: 50px;
+}
+
+.earlyLife h1, p{
+	color: #ffff;
+}
+
+.earlyLife h1{
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	text-align: center;
+	margin-bottom: 25px;
+	border-bottom: #ffff solid 1px;
+	padding-bottom: 50px;
+}
+
+.earlyLife p{
+	line-height: 1.6;
+	text-align: justify;
+}
+
+.career{
+	padding: 50px;
+	margin-top: 20px;
+}
+
+.career h1{
+	text-align: center;
+	border-bottom: #000000 solid 1px;
+	padding-bottom: 50px;
+}
+
+.career h2{
+	margin-top: 20px;
+}
+.career p{
+	color: #000000;
+	line-height: 1.6;
+	text-align: justify;
+}
+
+.laws ul, li {
+	font-family: 'Times New Roman', Times, serif;
+	line-height: 1.6;
+	margin-bottom: 10px;
+	text-align: justify;
+}
+
+.laws a{
+	color: blue;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+.retirement{
+	background-color: black;
+	padding: 50px;
+	margin-top: 20px;
+}
+
+.retirement h1{
+	color: #ffffff;
+	text-align: center;
+	margin-bottom: 25px;
+	border-bottom: #ffff solid 1px;
+	padding-bottom: 50px;
+}
+
+.retirement p{
+	text-align: justify;
+	line-height: 1.6;
+}
+
+.death{
+	padding: 50px;
+	margin-top: 20px;
+}
+
+.death h1{
+	text-align: center;
+	margin-bottom: 25px;
+	border-bottom: #000000 solid 1px;
+	padding-bottom: 50px;
+}
+.death p{
+	color: #000000;
+	line-height: 1.6;
+	text-align: justify;
+}
+
+.footer footer {
+	text-align: center;
+	background-color: #000000;
+	color: #ffffff;
+	padding: 10px;
+	margin-top: 100px;
+}
+
+.reference h1{
+	border-top: #000000 solid 10px;
+	margin-bottom: 30px;
+}
+.links a{
+	color: blue;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 1.2rem;
+	margin-bottom: 60px;
+}
+
+.links ul li{
+	line-height: normal;
+}
+
+.sidebar{
+	position: fixed;
+	top: 140px;
+	left: 20px;
+	background-color: #ffffff;
+	padding: 13px;
+	border-radius: 10px;
+	opacity: 0;
+	transform: translateY(3rem);
+	animation: animate 2s ease forwards;
+}
+
+.sidebar ul li{
+	list-style-type: none;
+	list-style-image: url(components/next.png);
+	margin-left: 20px;
+}
